@@ -141,41 +141,50 @@
                     </div>
                 </div>
             </div>
-
-            <section id="contact">
-                <div class="container">
-                    <h2>Contact Us</h2>
-                    <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-                </div>
-            </section>
         </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                 <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
+                <form>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="Company Name">
+
+                    <label for="industry">Industry</label>
+                    <input type="text" id="industry" name="industry" placeholder="Industry">
+
+                    <label for="message">How can we help you?</label>
+                    <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
 
     </main>
 
+    <footer>
+        <div class="container">
+            <p>For educational purposes only.</p>
+            <p>Email: <a href="mailto:info@vanguard.com">info@vanguard.com</a></p>
+            <p>Phone: 480.123.4567</p>
+        </div>
+    </footer>
 
+    <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('main-menu');
 
-
+    toggle.addEventListener('click', function() {
+        menu.classList.toggle('open');
+    });
+</script>
 </body>
-
-
-           
-
-        Contact Us
-        Want to take your business to the next level? Get in touch with our elite team today.
-
-            Full Name
-
-            Email Address
-
-            Company Name
-
-            Industry
-
-            How can we help you?
-
-            Submit
-
-        For educational purposes only. 
-        Email: info@vaanguard.com 
-        Phone: 480.123.4567
+</html>
